@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payo Mobile Banking - Website</title>
+  <link rel="shortcut icon" href="payoo.png" type="image/x-icon">
 
   <!-- Tailwind and daisyUi CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
@@ -25,25 +26,27 @@
 
     <!-- Login Form -->
 
-    <div class="hero bg-base-200">
+    <div class="">
       <div class="hero-content flex-col lg:flex-row-reverse">
         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <div class="card-body">
+          <form class="card-body">
             <fieldset class="fieldset">
               <label class="fieldset-label">Mobile Number</label>
-              <input type="number" class="input" placeholder="Enter your number" />
+              <input type="number" class="input" placeholder="Enter your number" required />
               <label class="fieldset-label">PIN</label>
-              <input type="text" class="input" placeholder="Enter 4 Digit Pin" />
+              <input type="text" class="input" placeholder="Enter 4 Digit Pin" required />
               <div><a class="link link-hover">Forgot password?</a></div>
-              <button class="btn btn-neutral mt-4">Login</button>
+              <button id="login-btn" class="btn bg-[#0874F2] text-white font-bold  mt-4">Login</button>
             </fieldset>
-          </div>
+          </form>
         </div>
       </div>
     </div>
 
   </section>
 
+
+  <script src="scripts/login.js"></script>
 </body>
 
 </html>
