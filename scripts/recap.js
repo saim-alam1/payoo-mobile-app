@@ -17,6 +17,6 @@ document.getElementById('add-money').addEventListener('click', function () {
       alert('Enter valid PIN');
     }
   } else {
-    alert('Enter valid amount and PIN');
+    // alert('Enter valid amount and PIN');
   }
 })
