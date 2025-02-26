@@ -4,7 +4,7 @@ document.getElementById('add-money').addEventListener('click', function (event) 
   const convertedAmount = parseInt(amount);
 
   const pinNumber = document.getElementById('pin-number').value;
-  const convertedPin = parseInt(pinNumber);
+  const convertedPin = parseFloat(pinNumber);
 
   const mainBalance = document.getElementById('main-balance').innerText;
   const convertedMainBalance = parseInt(mainBalance);
